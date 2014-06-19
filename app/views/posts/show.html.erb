@@ -1,17 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container">
+	<h2>
+	<strong></strong>	  
+	</h2>
 	<div class="row">
-		<div class="offset4 span8">
-			<p>
-			  <strong>Title:</strong>
-			  <%= @post.title %>
-			</p>
-
-			<p>
-			  <strong>Body:</strong>
-			  <%= @post.body %>
-			</p>
+		<div class="offset2 span8">
+			<table>
+            	<th>
+            		<h2>
+            			<strong><%= @post.title %></strong>
+            		</h2>
+            	</th>
+            	<tr>
+            		<td><%= @post.body %></td>
+            	</tr>
+            </table>
+   			<br><br>
 
 			<%= link_to 'Edit', edit_post_path(@post) %> |
 			<%= link_to 'Back', posts_path %>
